@@ -24,12 +24,31 @@ const Navbar = () => {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg py-2' : 'bg-transparent py-4'}`}>
       <div className="container-custom">
         <div className="flex justify-between items-center">
-          {/* Logo */}
-          <div className="flex items-center">
-            <h1 className={`text-2xl font-bold ${isScrolled ? 'text-red-600' : 'text-white'}`}>
-              MD-SO EMS
-            </h1>
-          </div>
+          
+          {/* Logo Section */}
+<div className={`flex items-center gap-3 px-4 py-2 rounded-2xl transition-all duration-300 ${
+  isScrolled 
+    ? 'bg-white shadow-sm border border-gray-100' // Clean white on scroll
+    : 'bg-white/90 backdrop-blur-sm shadow-xl' // High-contrast light badge over dark video
+}`}>
+  <img 
+    src="/logo.jpg" 
+    alt="MD-SO EMS Logo" 
+    className="h-10 w-auto rounded-md object-contain" 
+  />
+  <div className="flex flex-col">
+    <h1 className={`text-lg md:text-xl font-extrabold leading-none tracking-tight ${
+      isScrolled ? 'text-red-600' : 'text-navy-900' 
+    }`} style={{ color: isScrolled ? '' : '#000080' }}> {/* Fallback to Navy Blue hex if needed */}
+      MD-SO EMS
+    </h1>
+    <span className={`text-[10px] uppercase tracking-widest font-bold ${
+      isScrolled ? 'text-gray-500' : 'text-navy-800'
+    }`}>
+      Emergency Medical
+    </span>
+  </div>
+</div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">

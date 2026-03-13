@@ -2,19 +2,25 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center">
-      {/* Background Image with Overlay */}
+    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Video/Image Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1587745418805-3c8cfec0a502?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-          alt="Ambulance background"
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black opacity-60"></div>
+          poster="https://images.unsplash.com/photo-1587745418805-3c8cfec0a502?auto=format&fit=crop&w=1950&q=80"
+        >
+          <source src="/background-video.mp4" type="video/mp4" />
+          {/* Fallback image if video fails to load */}
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       {/* Content */}
-      <div className="container-custom relative z-10 text-center text-white">
+      <div className="container-custom relative z-10 text-center text-white px-4">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in">
           MD-SO Emergency Medical Services
         </h1>
@@ -24,17 +30,12 @@ const Hero = () => {
         <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto">
           Providing reliable patient transport to all hospitals in the Eastern Cape
         </p>
+        
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="#contact"
-            className="btn-primary inline-block"
-          >
+          <a href="#contact" className="btn-primary inline-block">
             Request Ambulance
           </a>
-          <a
-            href="tel:+27123456789"
-            className="btn-secondary inline-block"
-          >
+          <a href="tel:+27123456789" className="btn-secondary inline-block">
             📞 Emergency Call
           </a>
         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
+import TeamParallax from './components/TeamParallax'; 
 import Coverage from './components/Coverage';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -13,9 +14,10 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <Services />
-        <Coverage />
         <About />
+        <Services />
+        <TeamParallax /> 
+        <Coverage />
         <Contact />
       </main>
       <Footer />
