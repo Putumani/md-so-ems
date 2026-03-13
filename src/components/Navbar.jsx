@@ -63,7 +63,7 @@ const Navbar = () => {
 
           <div className="hidden md:block">
             <a
-              href="tel:+27123456789"
+              href="tel:+27837688431"
               className="bg-red-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-red-700 transition animate-pulse"
             >
               🚑 Emergency: 0837688431
