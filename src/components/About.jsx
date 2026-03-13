@@ -91,7 +91,7 @@ const About = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 md:border-4 border-[#1a1a1a]">
               <iframe
                 title="Lusikisiki Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13554.444444444444!2d29.5750!3d-31.3667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e5f8f3b8f8f8f8f%3A0x8f8f8f8f8f8f8f8f!2sLusikisiki!5e0!3m2!1sen!2sza!4v1615631234567!5m2!1sen!2sza"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114959.647054062!2d29.476!3d-31.368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e641a4b5b5b5b5b%3A0x5b5b5b5b5b5b5b5b!2sLusikisiki%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1690000000000!5m2!1sen!2sus"
                 width="100%"
                 height="300"
                 style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) brightness(95%)' }}
