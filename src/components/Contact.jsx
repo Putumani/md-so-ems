@@ -115,7 +115,17 @@ const Contact = () => {
                   <div>
                     <p className="text-gray-600">Emergency Line</p>
                     <a href="tel:+27123456789" className="text-xl font-bold text-gray-800 hover:text-red-600">
-                      123-456-789
+                      0837688431
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="flex items-center">
+                  <span className="text-red-600 text-2xl mr-4">📞</span>
+                  <div>
+                    <p className="text-gray-600">Other Line</p>
+                    <a href="tel:+27123456789" className="text-gray-800 hover:text-red-600">
+                      0796035673
                     </a>
                   </div>
                 </div>
@@ -124,8 +134,8 @@ const Contact = () => {
                   <span className="text-red-600 text-2xl mr-4">📱</span>
                   <div>
                     <p className="text-gray-600">Office Line</p>
-                    <a href="tel:+27987654321" className="text-gray-800 hover:text-red-600">
-                      987-654-321
+                    <a href="tel:+27392531250" className="text-gray-800 hover:text-red-600">
+                      0392531250
                     </a>
                   </div>
                 </div>
@@ -144,7 +154,7 @@ const Contact = () => {
                   <span className="text-red-600 text-2xl mr-4">📍</span>
                   <div>
                     <p className="text-gray-600">Address</p>
-                    <p className="text-gray-800">123 Main Street<br />Lusikisiki, 4820<br />Eastern Cape</p>
+                    <p className="text-gray-800">Room 12, Amca Centre crnr Main and Stanford street<br />Lusikisiki, 4820<br />Eastern Cape</p>
                   </div>
                 </div>
               </div>

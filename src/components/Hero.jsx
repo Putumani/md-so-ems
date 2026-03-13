@@ -3,7 +3,6 @@ import React from 'react';
 const Hero = () => {
   return (
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Video/Image Overlay */}
       <div className="absolute inset-0 z-0">
         <video
           autoPlay
@@ -14,12 +13,10 @@ const Hero = () => {
           poster="https://images.unsplash.com/photo-1587745418805-3c8cfec0a502?auto=format&fit=crop&w=1950&q=80"
         >
           <source src="/background-video.mp4" type="video/mp4" />
-          {/* Fallback image if video fails to load */}
           Your browser does not support the video tag.
         </video>
       </div>
 
-      {/* Content */}
       <div className="container-custom relative z-10 text-center text-white px-4">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in">
           MD-SO Emergency Medical Services
@@ -40,7 +37,6 @@ const Hero = () => {
           </a>
         </div>
         
-        {/* Stats */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center">
             <div className="text-3xl font-bold text-red-500">24/7</div>
@@ -57,7 +53,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <a href="#services" className="text-white">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

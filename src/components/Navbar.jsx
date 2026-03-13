@@ -25,32 +25,30 @@ const Navbar = () => {
       <div className="container-custom">
         <div className="flex justify-between items-center">
           
-          {/* Logo Section */}
-<div className={`flex items-center gap-3 px-4 py-2 rounded-2xl transition-all duration-300 ${
-  isScrolled 
-    ? 'bg-white shadow-sm border border-gray-100' // Clean white on scroll
-    : 'bg-white/90 backdrop-blur-sm shadow-xl' // High-contrast light badge over dark video
-}`}>
-  <img 
-    src="/logo.jpg" 
-    alt="MD-SO EMS Logo" 
-    className="h-10 w-auto rounded-md object-contain" 
-  />
-  <div className="flex flex-col">
-    <h1 className={`text-lg md:text-xl font-extrabold leading-none tracking-tight ${
-      isScrolled ? 'text-red-600' : 'text-navy-900' 
-    }`} style={{ color: isScrolled ? '' : '#000080' }}> {/* Fallback to Navy Blue hex if needed */}
-      MD-SO EMS
-    </h1>
-    <span className={`text-[10px] uppercase tracking-widest font-bold ${
-      isScrolled ? 'text-gray-500' : 'text-navy-800'
-    }`}>
-      Emergency Medical
-    </span>
-  </div>
-</div>
+          <div className={`flex items-center gap-3 px-4 py-2 rounded-2xl transition-all duration-300 ${
+            isScrolled 
+                ? 'bg-white shadow-sm border border-gray-100' 
+                : 'bg-white/90 backdrop-blur-sm shadow-xl' 
+            }`}>
+            <img 
+                src="/logo.jpg" 
+                alt="MD-SO EMS Logo" 
+                className="h-10 w-auto rounded-md object-contain" 
+            />
+            <div className="flex flex-col">
+                <h1 className={`text-lg md:text-xl font-extrabold leading-none tracking-tight ${
+                isScrolled ? 'text-red-600' : 'text-navy-900' 
+                }`} style={{ color: isScrolled ? '' : '#000080' }}> 
+                MD-SO EMS
+                </h1>
+                <span className={`text-[10px] uppercase tracking-widest font-bold ${
+                isScrolled ? 'text-gray-500' : 'text-navy-800'
+                }`}>
+                Emergency Medical
+                </span>
+            </div>
+          </div>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
             {navLinks.map((link) => (
               <a
@@ -63,17 +61,15 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Emergency Contact - Desktop */}
           <div className="hidden md:block">
             <a
               href="tel:+27123456789"
               className="bg-red-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-red-700 transition animate-pulse"
             >
-              🚑 Emergency: 123-456-789
+              🚑 Emergency: 0837688431
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden"
             onClick={() => setIsOpen(!isOpen)}
@@ -93,7 +89,6 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden mt-4 bg-white rounded-lg shadow-xl p-4">
             {navLinks.map((link) => (
@@ -111,7 +106,7 @@ const Navbar = () => {
                 href="tel:+27123456789"
                 className="block w-full bg-red-600 text-white text-center px-4 py-2 rounded-lg font-semibold hover:bg-red-700 transition"
               >
-                🚑 Emergency: 123-456-789
+                🚑 Emergency: 0837688431
               </a>
             </div>
           </div>
